@@ -8,10 +8,64 @@ var ass;
 function datos(){
     elemento=nombre.value;
     console.log("datos "+elemento.charAt(0));
-    
+    if (elemento=="variable"){
+        ass="palabra reservada";
+    }else if(elemento=="entero"){
+        ass="palabra reservada";
+    }else if(elemento=="decimal"){
+        ass="palabra reservada";
+    }else if(elemento=="booleano"){
+        ass="palabra reservada";
+    }else if(elemento=="cadena"){
+        ass="palabra reservada";
+    }else if(elemento=="si"){
+        ass="palabra reservada";
+    }else if(elemento=="sino"){
+        ass="palabra reservada";
+    }else if(elemento=="mientras"){
+        ass="palabra reservada";
+    }else if(elemento=="hacer"){
+        ass="palabra reservada";
+    }else if(elemento=="VERDADERO"){
+        ass="Booleano";
+    }else if(elemento=="+"){
+        ass="Operador";
+    }else if(elemento=="-"){
+        ass="Operador";
+    }else if(elemento=="*"){
+        ass="Operador";
+    }else if(elemento=="/"){
+        ass="Operador";
+    }else if(elemento=="%"){
+        ass="Operador";
+    }else if(elemento=="="){
+        ass="Operador";
+    }else if(elemento=="=="){
+        ass="Operador";
+    }else if(elemento=="<"){
+        ass="Operador";
+    }else if(elemento==">"){
+        ass="Operador";
+    }else if(elemento==">="){
+        ass="Operador";
+    }else if(elemento=="<="){
+        ass="Operador";
+    }else if(elemento=="("){
+        ass="Agrupacion";
+    }else if(elemento==")"){
+        ass="Agrupacion";
+    }else if(elemento=="{"){
+        ass="Agrupacion";
+    }else if(elemento=="}"){
+        ass="Agrupacion";
+    }else if(elemento==";"){
+        ass="signo";
+    }
+
+
     for(var i=0;i<elemento.length;i++) {
         switch(elemento.charAt(i)){
-        
+    
             case "a": codigo="a"; case "b": codigo="a"; case "c": codigo="a"; case "d": codigo="a";
             case "e": codigo="a"; case "f": codigo="a"; case "g": codigo="a"; case "h": codigo="a";
             case "i":
@@ -21,7 +75,7 @@ function datos(){
             case "p": codigo="a"; case "q": codigo="a"; case "r": codigo="a"; case "s": codigo="a";
             case "t": codigo="a"; case "u": codigo="a"; case "v": codigo="a"; case "w": codigo="a";
             case "x": codigo="a"; case "y": codigo="a"; case "z": codigo="a";
-                 resultado="identificador"+ass;     
+                 resultado="identificador";     
             break
             case "0": codigo=parseInt.codigo+1; case "1": codigo=parseInt.codigo+1; case "2": codigo=parseInt.codigo+1; 
             case "3": codigo=parseInt.codigo+1; case "4": codigo=parseInt.codigo+1; case "5": codigo=parseInt.codigo+1; 
@@ -48,7 +102,7 @@ function datos(){
         }
     }
 
-    listado.innerHTML = listado.innerHTML + "<li class=\"list-group-item\">"+nombre.value+" "+resultado+"</li>";
+    listado.innerHTML = listado.innerHTML + "<li class=\"list-group-item\">"+nombre.value+" "+resultado+" "+ass+"</li>";
 	console.log(listado);
-	alert("hola "+nombre.value+" "+resultado);
+	alert("hola "+nombre.value+" "+resultado+" ");
 }
