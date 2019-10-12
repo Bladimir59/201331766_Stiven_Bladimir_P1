@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Practica1</title>
+        <link rel="stylesheet" href="Bootstrap/bootstrap.min.css" type="text/css"></link>
+
+    </head>
+
+    <body>       
+        <h2>ingrese informacion</h2>
+        <!--prueba de lectura de archivo-->
+
+        <input type="file" id="file-input" />
+            <h3>Contenido del archivo:</h3>
+            <pre id="contenido-archivo"></pre>
+        <textarea name="comentarios" rows="10" cols="40"></textarea>  
+
+        
+    
+        <!--este es codigo creado para llamar al metodo de analisador-->
+        <link rel="stylesheet" href="./css.css">
+        <script type="text/javascript" src = "./carga.js"></script>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1">
+        <style>
+ 
+        </style>
+        <script src="archivo.txt"></script>
+        <script>
+            window.addEventListener('load', function() {
+ 
+                document.getElementById('mostrar').innerHTML = variable;
+ 
+            }, false);
+        </script>
+    </head>
+    <div>
+        <header>
+            <h1> analizador lexico y sintactico </h1>
+        </header>
+
+        <section>
+            <article class="contenedor">
+                <h2>ingrese datos</h2>
+                <input type="text" id="nombre">
+                <button onclick="datos()">analizador </button>
+            </article>
+            <article class="contenedor1">
+                <p>Listado de analizados:</p>
+                <ul>
+                    <div id="listado"></div>
+                </ul>
+            </article>               
+        </section>
+    </div> 
+    <body>
+        <div id="mostrar"></div>
+    </body>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src = "./analisador.js"></script>
+    </body>
+
+</html>

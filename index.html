@@ -3,14 +3,38 @@
 <html lang="en">
 
     <head>
-
         <meta charset="utf-8" />
-
-        <title></title>
+        <title>Practica1</title>
+        <link rel="stylesheet" href="Bootstrap/bootstrap.min.css" type="text/css"></link>
 
     </head>
 
     <body>       
+        <h2>ingrese informacion</h2>
+        <article class="contenedor">
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">elija un archivo txt.</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+            </form>
+            <textarea name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea>   
+        </article>
+
+        <!--prueba de lectura de archivo-->
+
+        <input type="file" id="file-input" />
+            <h3>Contenido del archivo:</h3>
+        <pre id="contenido-archivo"></pre>
+        <textarea name="comentarios" rows="10" cols="40"></textarea>  
+
+        <!--este es codigo creado para llamar al metodo de analisador-->
+        <link rel="stylesheet" href="./css.css">
+        <script type="text/javascript" src = "./js.js"></script>
+        <!--codigo para hacer uso de la libreria de bootstrap-->
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 
     </body>
 
